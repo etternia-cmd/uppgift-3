@@ -38,16 +38,28 @@ nav a:hover {
 
 #intro {
     text-align: center;
-    border: 2px, solid, #c99b62;
+    border: 2px solid, #c99b62;
     padding: 35px;
     background-color: black;
 
 }
 
-#intro img {
+.imgcontainer {    /* this entire section makes the image zoom in on itself, and not overflow and expand (per request)*/
     width: 100%;
     max-width: 1000px;
+    margin: 0 auto 30px;
+    overflow: hidden;   /* where the magic happens*/ 
+}
+.imgcontainer img {
+    width: 100%;
     height: auto;
     display: block;   /* makes the image centered via margins*/
-    margin: 0 auto 30px;
+    transition: transform 0.3s ease;
+}
+.imgcontainer img:hover {
+    transform: scale(1.1);
+}
+
+.aboutpage {
+    font-size: 18px;
 }
