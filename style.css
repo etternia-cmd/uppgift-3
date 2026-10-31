@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;   /* this is for the general page styling */
+}
+
+body {
+    margin: 0;
+    background-color: #17191b;
+    color: #f1eee8;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #111314;
+    padding: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav a {
+    color: #f1eee8;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #c99b62;
+}
