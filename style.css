@@ -63,3 +63,23 @@ nav a:hover {
 .aboutpage {
     font-size: 18px;
 }
+
+.footerside {
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+.logo {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
