@@ -83,7 +83,7 @@ nav a:hover {
     text-align: center;
     padding: 35px;
     margin-top: 20px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.609);
     border: 3px solid orange;
     max-width: 1500px;
     margin: 50px auto 30px;
@@ -94,6 +94,14 @@ nav a:hover {
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+}
+
+#products {
+    text-align: center;
+    border: 2px solid orange;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.608);
+    font-size: 24px;
 }
 
 .footerlinks {
@@ -110,4 +118,31 @@ nav a:hover {
 
 .footerlinks a:hover {
     color: orange;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+    /* border: 3px dotted orange; */
+    padding: 20px;
+}
+
+.category {
+    background-color: rgb(18, 17, 17);
+    border: 1px solid orange;
+    padding: 25px;
+}
+
+.category a {
+    color: white;
+    text-decoration: none;
+    display: block;   /*make the link cover the entire grid block*/
+}
+
+.category:hover {
+    background-color: #292929;   
+    border-color: orange;
+    cursor: pointer;
 }
