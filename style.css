@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;   /* this is for the general page styling */
+    box-sizing: border-box;
 }
 
 main {
@@ -11,12 +11,22 @@ main {
 body {
     margin: 0;
     background-color: #17191b;
-    color: #f1eee8;
+    color: white;
     font-family: Arial, sans-serif;
+
+    margin: 0;
+    background-color: black;
+    background-image:
+        linear-gradient(rgba(15, 15, 15, 0.80), rgba(15, 15, 15, 0.80)),   /*default gradient from the website to make the background darker */
+        url("images/kalmar-2410817316.jpg");
+    background-size: cover;    /*cover the entire background body in this case */
+    background-position: center; /*center the image cuz of the KALMAR logo in the middle */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 header {
-    background-color: #111314;
+    background-color: rgba(33, 32, 32, 0.608);
     padding: 25px;
 }
 
@@ -27,7 +37,7 @@ nav {
 }
 
 nav a {
-    color: orange;
+    color: orange;   /*I went for orange because the image has orange teas and other accents*/
     text-decoration: none;
     font-size: 16px;
 }
@@ -38,36 +48,45 @@ nav a:hover {
 
 #intro {
     text-align: center;
-    border: 2px solid, #c99b62;
+    border: 2px solid orange;    
     padding: 35px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.491);   /*make the opacity a lil bit lower so it doesnt look like a black box (ugly) */
 
 }
 
-.imgcontainer {    /* this entire section makes the image zoom in on itself, and not overflow and expand (per request)*/
+.imgcontainer {
+    /* this entire section makes the image zoom in on itself, not overflow and expand (per request)*/
     width: 100%;
     max-width: 1000px;
     margin: 0 auto 30px;
-    overflow: hidden;   /* where the magic happens*/ 
+    overflow: hidden;
+    /* where the magic happens*/
 }
+
 .imgcontainer img {
     width: 100%;
     height: auto;
-    display: block;   /* makes the image centered via margins*/
+    display: block;
+    /* makes the image centered via margins*/
     transition: transform 0.3s ease;
 }
+
 .imgcontainer img:hover {
     transform: scale(1.1);
 }
 
-.aboutpage {
+.about {
     font-size: 18px;
 }
 
 .footerside {
     text-align: center;
-    padding: 30px;
-    margin-top: 60px;
+    padding: 35px;
+    margin-top: 20px;
+    background-color: black;
+    border: 3px solid orange;
+    max-width: 1500px;
+    margin: 50px auto 30px;
 }
 
 .logo {
@@ -82,4 +101,13 @@ nav a:hover {
     justify-content: center;
     gap: 25px;
     margin: 20px 0;
+}
+
+.footerlinks a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerlinks a:hover {
+    color: orange;
 }
