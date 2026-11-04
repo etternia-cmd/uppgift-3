@@ -195,6 +195,51 @@ nav a:hover {
 }
 
 
+/* Visit and contact pages */
+
+.visit-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.contact-info form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.contact-info input,
+.contact-info textarea {
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    border: 1px solid orange;
+    font-family: Arial, sans-serif;
+}
+
+.contact-info button {
+    padding: 12px;
+    background-color: orange;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-info button:hover {
+    background-color: white;
+}
+
 
 
 
@@ -206,6 +251,11 @@ nav a:hover {
 
     .products-page {
         padding: 20px;
+    }
+
+    .visit-info,
+    .contact-info {
+        grid-template-columns: 1fr;
     }
 
 }
