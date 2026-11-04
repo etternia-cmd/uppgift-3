@@ -10,14 +10,14 @@ main {
 
 body {
     margin: 0;
+    min-height: 100vh;
+    
     background-color: #17191b;
     color: white;
     font-family: Arial, sans-serif;
-
-    margin: 0;
     background-color: black;
     background-image:
-        linear-gradient(rgba(15, 15, 15, 0.80), rgba(15, 15, 15, 0.80)),   /*default gradient from the website to make the background darker */
+        linear-gradient(rgba(15, 15, 15, 0.90), rgba(15, 15, 15, 0.90)),   /*default gradient from the website to make the background darker */
         url("images/kalmar-2410817316.jpg");
     background-size: cover;    /*cover the entire background body in this case */
     background-position: center; /*center the image cuz of the KALMAR logo in the middle */
@@ -86,7 +86,7 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.609);
     border: 3px solid orange;
     max-width: 1500px;
-    margin: 50px auto 30px;
+    margin: 190px auto 40px;
 }
 
 .logo {
@@ -133,6 +133,8 @@ nav a:hover {
     background-color: rgb(18, 17, 17);
     border: 1px solid orange;
     padding: 25px;
+    cursor: pointer; /*clickable hand cursor */
+    position: relative; /*reference point */
 }
 
 .category a {
@@ -141,8 +143,69 @@ nav a:hover {
     display: block;   /*make the link cover the entire grid block*/
 }
 
+.category a::after {   /*this is to make the boxes clickable themselves, not only the text within the boxes */
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
 .category:hover {
     background-color: #292929;   
     border-color: orange;
     cursor: pointer;
+}
+
+.products-page {
+    text-align: center;
+    border: 2px solid orange;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.608);
+}
+
+.product-nav {
+    margin: 30px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product {
+    background-color: rgb(18, 17, 17);
+    border: 1px solid orange;
+    padding: 25px;
+}
+
+.product h2 {
+    color: orange;
+}
+
+.product p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.product .price {
+    font-weight: bold;
+    color: orange;
+    margin-top: 20px;
+}
+
+
+
+
+
+@media (max-width: 700px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .products-page {
+        padding: 20px;
+    }
+
 }
