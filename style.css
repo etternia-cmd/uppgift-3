@@ -279,4 +279,24 @@ nav a:hover {
         grid-template-columns: 1fr;
     }
 
+    .categories {   /*stack the product categories vertically */
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #intro {
+        padding: 20px;
+    }
+
 }
