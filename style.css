@@ -194,9 +194,6 @@ nav a:hover {
     margin-top: 20px;
 }
 
-
-/* Visit and contact pages */
-
 .visit-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -224,7 +221,6 @@ nav a:hover {
     background-color: #222;
     color: white;
     border: 1px solid orange;
-    font-family: Arial, sans-serif;
 }
 
 .contact-info button {
